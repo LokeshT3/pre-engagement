@@ -11,6 +11,10 @@ spring:
     username: root
     password: Lokesh01
     driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
   jpa:
     hibernate:
       ddl-auto: update
+    defer-datasource-initialization: true
